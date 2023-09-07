@@ -154,8 +154,7 @@ def list_students(request):
 
     return JsonResponse({'students_data': student_data})
 
-@csrf_exempt
-@login_required  # Use this decorator to ensure the user is authenticated
+@csrf_exempt# Use this decorator to ensure the user is authenticated
 def get_student_details(request):
     if request.method == 'GET':
         student = request.user.student  # Retrieve the student associated with the logged-in user

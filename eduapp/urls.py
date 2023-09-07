@@ -10,7 +10,7 @@ urlpatterns = [
     path('students/', views.list_students, name='list-students'),
     path('students/create/', views.create_student, name='create-student'),
     path('studentDetails/<str:student_id>/', views.student_dashboard_view, name='student_dashboard_view'),
-    path('register/', views.register, name='register'),
+    path('students/register/', views.register_student, name='register_student'),
     path('student/login/', views.custom_login, name='custom_login'),
 
     # Course URLs
