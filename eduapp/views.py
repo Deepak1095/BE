@@ -528,7 +528,7 @@ def list_announcements(request):
 def register_student(request):
     if request.method == 'POST':
         data = json.loads(request.body)
-        username = data.get('username')
+        username = data.get('name')
         password = data.get('password')
         name = data.get('name')
         gender = data.get('gender')
