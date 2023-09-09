@@ -2,15 +2,17 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
+
+   
     # Instructor URLs
     path('instructors/', views.list_instructors, name='list-instructors'),
     path('instructors/<int:pk>/', views.instructor_detail, name='instructor-detail'),
 
     # Student URLs
+    path('register/',views.register,name='register'),
     path('students/', views.list_students, name='list-students'),
-    path('students/create/', views.create_student, name='create-student'),
+    path('students/register/', views.register_student, name='register-student'),
     path('studentDetails/<str:student_id>/', views.student_dashboard_view, name='student_dashboard_view'),
-    path('students/register/', views.register_student, name='register_student'),
     path('student/login/', views.custom_login, name='custom_login'),
 
     # Course URLs
