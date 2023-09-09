@@ -55,7 +55,8 @@ MIDDLEWARE = [
 ]
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:4200",
-    "http://localhost:8000"
+    "http://localhost:8000",
+    "https://sage-academy007-backend.vercel.app"
 ]
 ROOT_URLCONF = 'studyapp.urls'
 
